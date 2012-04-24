@@ -1127,7 +1127,7 @@
 
     // Add the root to a fragment
     _rootedFragment: function(fragment) {
-      if (fragment.length && this.options.root[this.options.root.length - 1] != '/') {
+      if (fragment.length && this.options.root.charAt(this.options.root.length - 1) != '/') {
         return this.options.root + '/' + fragment;
       } else {
         return this.options.root + fragment;
